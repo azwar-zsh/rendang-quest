@@ -1,0 +1,6 @@
+{
+  "name": "Rendang Quest: Petualangan Memasak Rendang",
+  "description": "Game edukasi kuliner interaktif untuk mengenal sejarah, memilih bahan rempah, menyusun proses memasak, dan menguji wawasan tentang Rendang khas Minangkabau.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,130 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Fredoka', system-ui, -apple-system, sans-serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #FDF4E3;
+    color: #4A2511;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+  }
+}
+
+/* Warm Gingham Tablecloth Pattern inspired by the reference design */
+.bg-gingham-warm {
+  background-color: #FDF4E3;
+  background-image: 
+    linear-gradient(90deg, rgba(232, 188, 138, 0.22) 50%, transparent 50%),
+    linear-gradient(rgba(232, 188, 138, 0.22) 50%, transparent 50%);
+  background-size: 36px 36px;
+}
+
+.bg-gingham-border {
+  background-color: #F5DEC0;
+  background-image: 
+    linear-gradient(90deg, rgba(212, 149, 90, 0.35) 50%, transparent 50%),
+    linear-gradient(rgba(212, 149, 90, 0.35) 50%, transparent 50%);
+  background-size: 24px 24px;
+}
+
+/* Tactile 2D Cartoon Game Card & Button Shadows */
+.game-panel {
+  background-color: #FFF9EE;
+  border: 3px solid #C68B59;
+  box-shadow: 0 6px 0 #9C6234, 0 10px 20px rgba(74, 37, 17, 0.12);
+}
+
+.game-panel-soft {
+  background-color: #FFFDF8;
+  border: 2.5px solid #D5A372;
+  box-shadow: 0 4px 0 #B37B48;
+}
+
+.ribbon-header {
+  background: linear-gradient(180deg, #8B4C24 0%, #6A3615 100%);
+  border: 2.5px solid #4A230B;
+  box-shadow: 0 4px 0 #3D1C08, inset 0 2px 0 rgba(255, 255, 255, 0.22);
+  color: #FFF8EC;
+}
+
+.wood-btn {
+  background: linear-gradient(180deg, #98552B 0%, #733B18 100%);
+  border: 2.5px solid #4A230B;
+  box-shadow: 0 5px 0 #3D1C08, inset 0 2px 0 rgba(255, 255, 255, 0.25);
+  color: #FFF8EC;
+  transition: transform 140ms cubic-bezier(0.16, 1, 0.3, 1), opacity 140ms ease;
+}
+
+.wood-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+}
+
+.wood-btn:active:not(:disabled) {
+  transform: translateY(3px);
+}
+
+.orange-btn {
+  background: linear-gradient(180deg, #F59E0B 0%, #D97706 100%);
+  border: 2.5px solid #78350F;
+  box-shadow: 0 5px 0 #78350F, inset 0 2px 0 rgba(255, 255, 255, 0.35);
+  color: #FFFBEB;
+  transition: transform 140ms cubic-bezier(0.16, 1, 0.3, 1), opacity 140ms ease;
+}
+
+.orange-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+}
+
+.orange-btn:active:not(:disabled) {
+  transform: translateY(3px);
+}
+
+.green-btn {
+  background: linear-gradient(180deg, #529447 0%, #3B7332 100%);
+  border: 2.5px solid #1E4218;
+  box-shadow: 0 5px 0 #1E4218, inset 0 2px 0 rgba(255, 255, 255, 0.3);
+  color: #F4FBF2;
+  transition: transform 140ms cubic-bezier(0.16, 1, 0.3, 1), opacity 140ms ease;
+}
+
+.green-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+}
+
+.green-btn:active:not(:disabled) {
+  transform: translateY(3px);
+}
+
+.cream-btn {
+  background: linear-gradient(180deg, #FFFBF2 0%, #F4E3C6 100%);
+  border: 2.5px solid #9C6234;
+  box-shadow: 0 4px 0 #7C4921, inset 0 2px 0 rgba(255, 255, 255, 0.8);
+  color: #5A2E14;
+  transition: transform 140ms cubic-bezier(0.16, 1, 0.3, 1), opacity 140ms ease;
+}
+
+.cream-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+}
+
+.cream-btn:active:not(:disabled) {
+  transform: translateY(2px);
+}
+
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-5px); }
+}
+
+.animate-float-slow {
+  animation: floatSlow 3.2s ease-in-out infinite;
+}
+
